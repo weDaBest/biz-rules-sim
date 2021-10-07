@@ -1,0 +1,6 @@
+OrgCode,Organization,Unit,Subunit,Activity,Service
+DHS01,DHS,CBP,AIRENTRY,Entry,Identify
+DHS01,DHS,CBP,AIRENTRY,Entry,Verify
+DHS01,DHS,CBP,AIRENTRY,Entry,Preverify
+DHS01,DHS,CBP,AIRENTRY,Entry,Retrieve-Identity
+DHS01,DHS,CBP,AIRENTRY,Entry,AddIdentityFlag

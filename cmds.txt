@@ -1,0 +1,20 @@
+PATCH Request   
+curl -X PATCH -H "Content-Type: application/json" -H "Accept: application/json" -d "{ \"Updates\" : [{\"OrgCode\" : \"DHS01\", \"Organization\" : \"DHS\", \"Unit\" : \"CBP\", \"Subunit\" : \"AIRENTRY\", \"Activity\" : \"Entry\", \"Service\" : \"Add-Derogatory-Information\" }]}" http://localhost:80/rule/serviceAuthorization
+
+GET Request
+http://localhost:80/rule/serviceAuthorization
+
+
+POST Request
+1. Creating a new rule, empty rule  
+curl -X POST -H "Content-Type: application/json" -H "Accept: application/json" -d "{}" http://localhost:80/rule/idtFLagFiltering
+
+2. Creating a new rule with some data
+curl -X POST -H "Content-Type: application/json" -H "Accept: application/json" -d "{ \"NewRuleData\" : [{\"OwnerOrgCode\" : \"DHS01\", \"ReqOrgCode\" : \"DHS02\", \"SPC\" : \"false\", \"DEAD\" : \"true\", \"USC\" : \"true\"}]}" http://localhost:80/rule/testFlag
+
+
+Delete Request
+1. Delete entire rule 
+curl -X DELETE  http://localhost:80/rule/idtFlagFiltering
+
+2. Delete a single row
